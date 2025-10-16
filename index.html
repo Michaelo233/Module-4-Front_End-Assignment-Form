@@ -13,19 +13,19 @@
             <h1>Favorite Game Survey</h1>
             <fieldset>
                 <legend>Contact Information</legend>
-                <div class="contact_info">
+                <div class="contact_info" class="error">
                     <label for="name" >Name:</label>
                     <input type="text" name="name" id="name" placeholder="Full Name">
                 </div>
-                <div class="contact_info">
+                <div class="contact_info" class="error">
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" placeholder="@email.com">
                 </div>
-                <div class="contact_info">
+                <div class="contact_info" class="error">
                     <label for="number">Number:</label>
                     <input type="number" name="number" id="number" class="no-spin" placeholder="Phone Number">
                 </div>
-                <div class="contact_info">
+                <div class="contact_info" class="error">
                     <label for="country">Country:</label>
                     <select name="country" id="country">
                         <option value="country" id="choose">choose...</option>
@@ -61,7 +61,7 @@
 
             <fieldset>
                 <legend>Favorite game type:</legend>
-                <div class="favorite">
+                <div class="favorite" class="error">
                     <div class="games">
                         <label for="arcade"></label><input type="radio" name="game" id="arcade">Arcade games</label>
                     </div>
@@ -76,10 +76,10 @@
                     </div>
                     
                 </div>
-                <div class="favorite">
+                <div class="favorite" class="error">
                     <textarea name="about" id="about" rows="6" cols="50" placeholder="Tell us about the game type and why its your favorite..."></textarea>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit">Submit</button>
             </fieldset>
 
         </div>
