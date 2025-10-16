@@ -3,14 +3,20 @@
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: #1e2124f0;
+
+html, body{
+     min-height: 100vh; /* stay at least full screen */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    background-color: #1E2124;
 }
+
 .form_box {
-    height: 80vh;
-    width: 100vh;
-    margin: 10vh;
-    margin-left: 450px;
+    height: fit-content;
+    /* width: 100vh; */
+    margin: 3vh;
     padding: 50px;
     background-color: #1E2124;
     color: rgb(233, 225, 210);
@@ -34,6 +40,7 @@ legend {
     font-size: x-large;
     margin-bottom: 10px;
 }
+
 .contact_info label{
     display: block;
     margin-bottom: 8px;
@@ -53,4 +60,36 @@ legend {
 .no-spin::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.favorite {
+    margin-bottom: 20px;
+}
+
+.games{
+    display: block;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.games input {
+    margin-right: 9px;
+}
+
+.favorite textarea {
+    width: 50vh;
+    padding-left: 10px;
+    height: 110px;
+    padding-top: 10px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+button {
+    width: 68px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(95, 255, 95);
+    border: 2px solid rgb(95, 255, 95);
+    color: #000;
 }
