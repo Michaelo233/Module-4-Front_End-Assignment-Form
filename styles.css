@@ -93,3 +93,62 @@ button {
     border: 2px solid rgb(95, 255, 95);
     color: #000;
 }
+
+@media (min-width: 480px) and (max-width: 580px) {
+    body {
+        overflow-x: hidden;
+    }
+    h1{
+        font-size: x-large;
+    }
+    .form_box {
+        background-color: #1E2124;
+        margin: 0;
+    }
+    fieldset {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    body {
+        background-color: #1E2124;
+        margin: 0;
+    }
+    h1 {
+        margin-left: 3vh;
+    }
+    .favorite teXtarea, .contact_info input, select{
+        width: 42vh;
+        margin: 0;
+    }
+}
+@media (max-width: 880px) {
+    .form_box {
+        /* width: 80.4vh; */
+        margin-left: 0;
+        background-color: #1E2124;
+        margin: 0;
+    }
+    fieldset {
+        border: none;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+    body {
+        background-color: #1E2124;
+    }
+    h1 {
+        margin-left: 12vh;
+    }
+}
+@media (min-width: 881px) and (max-width: 1200px) {
+    body {
+        background-color: #1E2124;
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .form_box {
+        margin-left: -90px;
+    }
+}
