@@ -7,61 +7,61 @@
     <title>Document</title>
 </head>
 <body>
-   <form>
+   <form id="form">
         <div class="form_box">
             
             <h1>Favorite Game Survey</h1>
             <fieldset>
                 <legend>Contact Information</legend>
-                <div class="contact_info" class="error">
+                <div class="contact_info error">
                     <label for="name" >Name:</label>
                     <input type="text" name="name" id="name" placeholder="Full Name">
                 </div>
-                <div class="contact_info" class="error">
+                <div class="contact_info error">
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" placeholder="@email.com">
                 </div>
-                <div class="contact_info" class="error">
+                <div class="contact_info error">
                     <label for="number">Number:</label>
                     <input type="number" name="number" id="number" class="no-spin" placeholder="Phone Number">
                 </div>
-                <div class="contact_info" class="error">
+                <div class="contact_info error">
                     <label for="country">Country:</label>
-                    <select name="country" id="country">
-                        <option value="country" id="choose">choose...</option>
-                        <option value="country">Algeria</option>
-                        <option value="country">Belgium</option>
-                        <option value="country">Canada</option>
-                        <option value="country">Denmark</option>
-                        <option value="country">England</option>
-                        <option value="country">France</option>
-                        <option value="country">Ghana</option>
-                        <option value="country">Hungary</option>
-                        <option value="country">Iceland</option>
-                        <option value="country">Jamiaca</option>
-                        <option value="country">Kenya</option>
-                        <option value="country">Luxembourg</option>
-                        <option value="country">Mexico</option>
-                        <option value="country">Nepal</option>
-                        <option value="country">Oman</option>
-                        <option value="country">Peru</option>
-                        <option value="country">Qatar</option>
-                        <option value="country">Russia</option>
-                        <option value="country">Spain</option>
-                        <option value="country">Turkey</option>
-                        <option value="country">Uganda</option>
-                        <option value="country">Venezuela</option>
-                        <option value="country">Vatican City</option>
-                        <option value="country">Yemen</option>
-                        <option value="country">Zambia</option>
-                        <option value="country">Zimbabwe</option>
+                    <select name="countries" id="country">
+                        <option value="" disabled selected>choose...</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="England">England</option>
+                        <option value="France">France</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Hungary">Hungary</option>
+                        <option value="Iceland">Iceland</option>
+                        <option value="Jamiaca">Jamiaca</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Luxembourg">Luxembourg</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Oman">Oman</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Qatar">Qatar</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Vatican">Vatican City</option>
+                        <option value="Yemen">Yemen</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Zimbabwe">Zimbabwe</option>
                     </select>
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend>Favorite game type:</legend>
-                <div class="favorite" class="error">
+                <div class="favorite error">
                     <div class="games">
                         <label for="arcade"></label><input type="radio" name="game" id="arcade">Arcade games</label>
                     </div>
@@ -76,8 +76,8 @@
                     </div>
                     
                 </div>
-                <div class="favorite" class="error">
-                    <textarea name="about" id="about" rows="6" cols="50" placeholder="Tell us about the game type and why its your favorite..."></textarea>
+                <div class="favorite error">
+                    <textarea name="thoughts" id="thoughts" rows="6" cols="50" placeholder="Tell us about the game type and why its your favorite..."></textarea>
                 </div>
                 <button type="submit" id="submit">Submit</button>
             </fieldset>
