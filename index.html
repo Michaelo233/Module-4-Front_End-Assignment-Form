@@ -15,19 +15,24 @@
                 <legend>Contact Information</legend>
                 <div class="contact_info error">
                     <label for="name" >Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Full Name">
+                    <input type="text" name="name" id="name" placeholder="Full Name" 
+                    aria-label="Enter your full name">
                 </div>
                 <div class="contact_info error">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="@email.com">
+                    <input type="email" name="email" id="email" placeholder="@email.com"
+                     aria-label="Enter your email address">
                 </div>
                 <div class="contact_info error">
                     <label for="number">Number:</label>
-                    <input type="number" name="number" id="number" class="no-spin" placeholder="Phone Number">
+                    <input type="number" name="number" id="number" 
+                    class="no-spin" placeholder="Phone Number" 
+                    aria-label="Enter your Phone number">
                 </div>
                 <div class="contact_info error">
                     <label for="country">Country:</label>
-                    <select name="countries" id="country">
+                    <select name="countries" id="country" 
+                    aria-label="Select your country of residence">
                         <option value="" disabled selected>choose...</option>
                         <option value="Algeria">Algeria</option>
                         <option value="Belgium">Belgium</option>
@@ -63,21 +68,28 @@
                 <legend>Favorite game type:</legend>
                 <div class="favorite error">
                     <div class="games">
-                        <label for="arcade"></label><input type="radio" name="Arcade" id="arcade">Arcade games</label>
+                        <label for="arcade"></label><input type="radio" 
+                        name="Arcade games" id="arcade">Arcade games</label>
                     </div>
                     <div class="games">
-                        <label for="strategy"></label><input type="radio" name="Strategy" id="strategy">Strategy games</label>
+                        <label for="strategy"></label><input type="radio"
+                         name="Strategy games" id="strategy">Strategy games</label>
                     </div>
                     <div class="games">
-                        <label for="adventure"></label><input type="radio" name="Adventure" id="adventure">Adventure games</label>
+                        <label for="adventure"></label><input type="radio"
+                         name="Adventure games" id="adventure">Adventure games</label>
                     </div>
                     <div class="games">
-                        <label for="sport"></label><input type="radio" name="Sport" id="sport">Sport games</label>
+                        <label for="sport"></label><input type="radio" name="Sport games" 
+                        id="sport">Sport games</label>
                     </div>
                     
                 </div>
                 <div class="favorite error">
-                    <textarea name="thoughts" id="thoughts" rows="6" cols="50" placeholder="Tell us about the game type and why its your favorite..."></textarea>
+                    <textarea name="thoughts" id="thoughts" rows="6" 
+                    cols="50" placeholder="Tell us about the game type and why its your favorite..."
+                     aria-label="Tell us about 
+                    your favorite game type."></textarea>
                 </div>
                 <button type="submit" id="submit">Submit</button>
             </fieldset>

@@ -38,6 +38,8 @@ function isNotEmpty() {
         showInputError(nameInput, "Please enter a valid name.");
         isValidForm = false;
     }
+
+    return isValidForm;
 }
 
 function isValidEmail(){
@@ -109,7 +111,7 @@ submitButton.addEventListener("click", (e) => {
     // Check if all forms are valid.
     const isValidForm = validateForm.every(result => result === true);
 
-    if(isValidForm) {
+    if(isValidForm === true){
         console.log("Form submitted.");
         form.submit();
     }
